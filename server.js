@@ -8,7 +8,7 @@ var app = express();
 app.set('view engine','hbs');
 app.get('/',(req, res)=>{
 console.log('Hey There', new Date().toString());
-   res.send('Hello Express!');
+   res.send('<h1>Hello Express!<h1>');
 });
 
 app.get('/about',(req,res)=>{
